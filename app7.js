@@ -1,5 +1,14 @@
-let items = [1,2,3,4,5];
-
-let hasThree = items.some(x => x === 3);
-
-console.log(hasThree);
+var tasks = [
+    {
+        title: 'Do laundry',
+        completed: true
+    },
+    {
+        title: 'Feed the cat',
+        completed: true
+    },
+    {
+        title: 'Watch the array lessons on egghead.io',
+        completed: true
+    }
+];
