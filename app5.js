@@ -1,5 +1,23 @@
-var items = [10,20,2,30];
+var lessons = [
+    {
+        title: 'Javascript Array methods in depth - concat',
+        views: 1000
+    },
+    {
+        title: 'Javascript Array methods in depth - slice',
+        views: 1050
+    },
+    {
+        title: 'Javascript Array methods in depth - join',
+        views: 1025
+    }
+];
 
-items.sort((a,b) => a - b);
+let list = lessons
+  .sort((a,b) => b.views-a.views)
+  .map(x => `   <li>${x.title} - ${x.views}</li>`)
+  .join('\n');
 
-console.log(items);
+let output = `<ul>\n${list}\n</ul>`;
+
+console.log(output);
