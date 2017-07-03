@@ -1,8 +1,7 @@
-var help = [
-  'Usage',
-  '   foo-app <input>'
-];
+var name = 'patryk tomek';
 
-if(process.argv[2] === 'help') {
-  console.log(help.join('\n'));
-}
+var upper = name.split(' ')
+  .map(x => x.charAt(0).toUpperCase() + x.slice(1))
+  .join(' ');
+  
+console.log(upper);
