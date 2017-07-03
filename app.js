@@ -1,4 +1,8 @@
-let items = [1,2];
-let newItems = items.concat(3);
+let people = [
+  {name:"Patryk"},
+  {name:"Tomek"}
+]
 
-console.log(newItems);
+people.forEach((person) => {
+  console.log(person.name);
+});
