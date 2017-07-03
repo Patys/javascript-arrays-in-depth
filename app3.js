@@ -1,4 +1,4 @@
-let family = ['Patryk', 'Tomek', 'Kot'];
+let family = ['Patryk', 'Tomek'];
 
 let kittieExists = family.indexOf('Kot') > -1;
 
