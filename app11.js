@@ -8,3 +8,10 @@ const users = [
         name: 'Sally'
     }
 ];
+
+const newUsers = users.reduce((obj, user) => {
+  obj[user.id] = user;
+  return obj;
+}, {});
+
+console.log(newUsers);
