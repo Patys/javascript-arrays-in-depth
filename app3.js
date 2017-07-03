@@ -1,9 +1,14 @@
-let family = ['Patryk', 'Tomek'];
+let whitelist = ['.css', '.js'];
 
-let kittieExists = family.indexOf('Kot') > -1;
+let events = [
+  {file: 'css/core.css'},
+  {file: 'js/app.js'},
+  {file: 'index.html'}
+];
 
-if(!kittieExists){
-  family.push('Kot');
-}
+let filtered = events.filter(event => {
+  let ext = require('path').extname(event.file);
+  return whitelist.indexOf(ext) > -1;
+});
 
-console.log(family);
+console.log(filtered);
