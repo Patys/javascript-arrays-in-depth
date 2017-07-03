@@ -1,8 +1,8 @@
-let items = [1,2,3,4];
+let person = {name: "Patryk"}
+let items = [1,person];
 let copy = items.slice();
 
-copy[0] = 100;
-copy.push(432);
+copy[1].name = 'Tome';
 
 console.log(items);
 console.log(copy);
