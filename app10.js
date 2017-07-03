@@ -1,4 +1,12 @@
-const items = [1,2,3,4,5];
-const result = items.every(x => x < 10);
-
-console.log(result);
+var videos = [
+    {
+        title: 'Array methods in depth: concat',
+        length: 310,
+        viewed: 310
+    },
+    {
+        title: 'Array methods in depth: join',
+        length: 420,
+        viewed: 360
+    }
+];
