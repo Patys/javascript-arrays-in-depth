@@ -2,7 +2,13 @@ let people = [
   {name:"Patryk"},
   {name:"Tomek"}
 ]
+let people2 = [
+  {name:"Ola"},
+  {name:"Mariola"}
+]
 
-people.forEach((person) => {
+people
+  .concat(people2)
+  .forEach((person) => {
   console.log(person.name);
 });
