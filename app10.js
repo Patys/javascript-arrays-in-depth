@@ -10,3 +10,13 @@ var videos = [
         viewed: 360
     }
 ];
+
+function complete(x) {
+  return x.viewed === x.length;
+}
+
+const isComplete = videos.every(complete);
+const completed = videos.filter(complete);
+
+console.log(isComplete);
+console.log(completed);
