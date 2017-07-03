@@ -14,9 +14,12 @@ var tasks = [
 ];
 
 function addTask(title) {
+  if(tasks.some(task => task.title === title)) {
+    return;
+  }
   tasks.push({title: title, completed: false});
 }
 
-addTask('Feed the dog');
+addTask('Feed the cat');
 
 console.log(tasks);
