@@ -1,4 +1,11 @@
-var items = [1,2,3,4,5];
-var copy = items.slice(-1);
+let person = {name: "patryk-szczygło"};
 
-console.log(copy);
+let filters = {
+  'deslugify': x => x.replace('-', ' '),
+  'uppercase': x => x.toUpperCase()
+};
+
+let input = 'name | deslugify | uppercase';
+
+let sections = input.split('|').map(x => x.trim());
+console.log(sections);
