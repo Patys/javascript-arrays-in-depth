@@ -1,8 +1,4 @@
-let person = {name: "Patryk"}
-let items = [1,person];
-let copy = items.slice();
+var items = [1,2,3,4,5];
+var copy = items.slice(-1);
 
-copy[1].name = 'Tome';
-
-console.log(items);
 console.log(copy);
