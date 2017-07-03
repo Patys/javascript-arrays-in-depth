@@ -12,3 +12,11 @@ var tasks = [
         completed: true
     }
 ];
+
+function addTask(title) {
+  tasks.push({title: title, completed: false});
+}
+
+addTask('Feed the dog');
+
+console.log(tasks);
